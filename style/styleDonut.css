@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+
+}
+
+body {
+  background-color: whitesmoke;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+button {
+  width: 10%;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+
+#btnPedidos,
+#btnfechar {
+  background-color: #3387e7;
+  padding: 5px;
+  text-decoration: none;
+  box-shadow: 0 5px 10px rgba(0, 0, 1, .9);
+  color: white;
+  margin-top: 15px;
+  width: 100px;
+  margin-bottom: 50px;
+  margin-left: 8%;
+
+
+}
+
+
+
+
+.botao {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+
+}
+
+.botao button {
+  background-color: #3387e7;
+  padding: 5px;
+  text-decoration: none;
+  box-shadow: 0 5px 10px rgba(0, 0, 1, .9);
+  color: white;
+  margin-top: 15px;
+  width: 100px;
+  margin-bottom: 50px;
+}
+
+label {
+  font-weight: bold;
+  margin-left: 5%;
+}
+
+
+
+.rdo {
+  max-width: 800px;
+
+}
+
+.rdo h1 {
+  margin-bottom: 3%;
+  font-family: 'Courier New', Courier, monospace;
+
+}
+
+.itens {
+  display: none;
+  max-height: 80%;
+  text-align: center;
+  border-radius: 14px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  background-image: linear-gradient(rgba(255, 0, 225, 0.886), rgba(231, 106, 185, 0.911))
+}
+
+.itens input {
+  display: flex;
+  margin: auto;
+  margin-bottom: 5%;
+}
+
+.itens p {
+  margin-top: 15px;
+}
+
+form {
+  border-radius: 14px;
+  /* display: none; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  background-image: linear-gradient(rgba(255, 0, 225, 0.886), rgba(231, 106, 185, 0.911))
+}
+
+#print input[type="text"],
+input[type="number"],
+input[type="date"],
+input[type="time"],
+textarea {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 10px;
+  margin-left: 5%;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  display: flex;
+  flex-direction: column;
+}
+
+
+#minhaLista {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin-left: 20%;
+}
+
+#minhaLista p {
+  text-decoration: underline;
+  word-wrap: break-word;
+  font-weight: lighter;
+  margin-left: 5px;
+  margin-top: 5px;
+
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+
+
+h4 {
+  color: rgb(249, 249, 249);
+}
