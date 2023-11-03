@@ -4,17 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./style/styleDonut.css">
     <title>Document</title>
 </head>
 
 <body>
-
-
+    <header>
+        <nav>
+            <ul>
+                <li> <button type="button" id="btnSaida">Saídas</button></li>
+                <li> <button id="btnPedidos">Pedidos</button></li>
+                <li><a href="https://docs.google.com/spreadsheets/d/1F8yBJb4ZgxiMDQkh0eKg0EhWxs-_ARTacXON-uOIUc8/edit#gid=0"
+                        target="_blank">Planilha</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
     <div class="rdo" id="rdo">
-        <button id="btnPedidos">Pedidos</button>
+
         <div class="itens">
-            <button id="btnfechar">Fechar</button>
+            <button id="btnfechar" onclick="fechar() ">Fechar</button>
             <h1>Vendidos</h1>
             <input type="text" placeholder="Pesquisar" id="pesquisar">
 
@@ -24,6 +36,16 @@
             </div>
         </div>
 
+
+        <div class="saiu">
+            <button type="button" class="closeSaida" onclick="fechar()"><i class="fa fa-close" style='color: white;'
+                    aria-hidden="true"></i>
+            </button>
+
+            <h1>Compras de Matéria Prima</h1>
+
+        </div>
+
         <form id="print">
 
             <div class="cabecalho">
@@ -31,27 +53,35 @@
                 <label for="dia">Data</label>
                 <input type="date" id="dia" required name="data[Dia]">
                 <label>Produto</label>
-                <input type="text" name=" data[Produto]" required id="Produto">
-                <label>Valor</label>
+                <input type="text" name=" data[Produto]" id="Produto">
+                <label>Valor de Entrada</label>
                 <input type="text" id="Valor" placeholder="Valor" step="0.01" min="0" max="1000" name="data[Valor]">
+
                 <label for="Cliente">Cliente</label>
                 <input type="text" id="Cliente" name="data[Cliente]">
 
             </div>
+            <div class="saidas">
+                <div class="saidas">
+                    <label>Compras</label>
+                    <input type="text" name=" data[Compra]" id="Compra">
+                    <label>Valor de Saída</label>
+                    <input type="text" id="Valor" placeholder="Valor" step="0.01" min="0" max="1000"
+                        name="data[ValorSaida]">
+                </div>
 
-
-            <div class="botao">
-                <button type="reset">Limpar</button>
-                <button type="submit" id="btnRDO">Enviar</button>
+                <div class="botao">
+                    <button type="reset">Limpar</button>
+                    <button type="submit" id="btnRDO">Enviar</button>
+                </div>
             </div>
-    </div>
 
-    </form>
-
+        </form>
 
 
-    <script src="./formDonut.js"></script>
-    <script src="./ApiDonuts.js"></script>
+
+        <script src="./formDonut.js"></script>
+        <script src="./ApiDonuts.js"></script>
 </body>
 
 </html>
